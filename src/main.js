@@ -17,6 +17,8 @@ Vue.component(Header.name, Header)
 
 // 导入mui样式
 import './lib/mui/css/mui.min.css'
+//mui的扩展图标需要引入对应的css
+import './lib/mui/css/icons-extra.css'
 
 
 var vm = new Vue({
