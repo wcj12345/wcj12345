@@ -12,7 +12,7 @@ module.exports = {
   devServer: {//配置webpack-dev-server相关的属性
     open: true,//默认会打开浏览器
     contentBase: 'src',//指定路径打开的是src
-    port: 3001,//端口
+    port: 3000,//端口
     hot: true//热更新 光有这一行不够的
   },
   plugins: [

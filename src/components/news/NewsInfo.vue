@@ -58,3 +58,12 @@ export default {
   }
 }
 </style>
+<style lang="scss">
+.newsinfo-container {
+  .content {
+    img {
+      width: 100%;
+    }
+  }
+}
+</style>
