@@ -100,11 +100,16 @@ export default {
       this.$router.push({ name: "goodscomment", params: { id } });
     },
     addToShopCar() {
-      if (this.ballFlag) {
-        return console.log(123);
-      } else {
+      
         this.ballFlag = !this.ballFlag;
-      }
+        var goodsinfo = {
+          id: this.id,
+          price: this.goodsinfo.sell_price,
+          count: this.selectedCount,
+          max: this.goodsinfo.stock_quantity,
+          selected: true
+        };
+        this.$store.commit("addToCar", goodsinfo);
     },
     beforeEnter(el) {
       el.style.transform = "translate(0,0)";
